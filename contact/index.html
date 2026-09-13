@@ -1,27 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/jpeg" href="/logo.jpg" />
-    <link rel="shortcut icon" href="/logo.jpg" />
-    <link rel="apple-touch-icon" href="/logo.jpg" />
-    <meta
-      name="description"
-      content="Contact Darius DevWorks - Get in touch for software engineering collaborations or inquiries."
-    />
-    <link rel="canonical" href="https://dariusdevworks.com/contact/" />
-    <meta property="og:title" content="Contact | Darius DevWorks" />
-    <meta
-      property="og:description"
-      content="Get in touch for software engineering collaborations or inquiries."
-    />
-    <meta property="og:url" content="https://dariusdevworks.com/contact/" />
-    <meta property="og:type" content="website" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="/logo.jpg">
+    <link rel="shortcut icon" href="/logo.jpg">
+    <link rel="apple-touch-icon" href="/logo.jpg">
+    <meta name="description" content="Contact Darius DevWorks - Get in touch for software engineering collaborations or inquiries.">
+    <link rel="canonical" href="https://dariusdevworks.com/contact/">
+    <meta property="og:title" content="Contact | Darius DevWorks">
+    <meta property="og:description" content="Get in touch for software engineering collaborations or inquiries.">
+    <meta property="og:url" content="https://dariusdevworks.com/contact/">
+    <meta property="og:type" content="website">
     <title>Contact | Darius DevWorks</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/contact/main.jsx"></script>
-  </body>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="../" class="logo">
+            <img src="../logo.jpg" alt="Darius DevWorks Logo" class="logo-icon">
+            Darius <span>DevWorks</span>
+        </a>
+        
+        <ul class="nav-links">
+            <li><a href="../">Home</a></li>
+            <li><a href="../projects/">Projects</a></li>
+            <li><a href="../about/">About</a></li>
+            <li><a href="./" class="active">Contact</a></li>
+        </ul>
+
+        <div class="nav-right-actions">
+            <button class="mobile-nav-toggle" aria-label="Toggle Navigation">☰</button>
+            <button class="mode-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme Mode">🌙</button>
+        </div>
+    </nav>
+
+    <div class="container contact-container">
+        <section class="hero" style="text-align: center; margin-bottom: 30px;">
+            <h1>Get in <span class="gradient-text">Touch</span></h1>
+            <p>Have a project in mind, technical query, or want to collaborate? Reach out directly.</p>
+        </section>
+
+        <div class="contact-card">
+            <div class="contact-methods">
+                <a href="mailto:dariusdevworks@gmail.com" class="contact-link">
+                    ✉️ dariusdevworks@gmail.com
+                </a>
+            </div>
+
+            <form id="contact-form" action="https://formsubmit.co/ajax/dariusdevworks@gmail.com" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; justify-content: center;">Send Message &rarr;</button>
+                <div id="form-status" class="form-status"></div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span class="current-year">2026</span> Darius DevWorks. Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.</p>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
 </html>

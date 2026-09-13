@@ -1,31 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/jpeg" href="/logo.jpg" />
-    <link rel="shortcut icon" href="/logo.jpg" />
-    <link rel="apple-touch-icon" href="/logo.jpg" />
-    <meta
-      name="description"
-      content="Darius DevWorks - Software engineering, system-level development, C/C++, Linux tools, and Android applications crafted with precision and performance."
-    />
-    <meta
-      name="keywords"
-      content="Darius DevWorks, Auto Analytics, Android Developer, Software Engineer, C/C++, Kotlin, Gemini AI"
-    />
-    <link rel="canonical" href="https://dariusdevworks.com/" />
-    <meta property="og:title" content="Darius DevWorks | Home" />
-    <meta
-      property="og:description"
-      content="Software engineering, system-level development, and high-performance applications."
-    />
-    <meta property="og:url" content="https://dariusdevworks.com/" />
-    <meta property="og:type" content="website" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="/logo.jpg">
+    <link rel="shortcut icon" href="/logo.jpg">
+    <link rel="apple-touch-icon" href="/logo.jpg">
+    <meta name="description"
+        content="Darius DevWorks - Software engineering, system-level development, C/C++, Linux tools, and Android applications crafted with precision and performance.">
+    <meta name="keywords" content="Darius DevWorks, Auto Analytics, Android Developer, Software Engineer, C/C++, Kotlin, Gemini AI">
+    <link rel="canonical" href="https://dariusdevworks.com/">
+    <meta property="og:title" content="Darius DevWorks | Home">
+    <meta property="og:description"
+        content="Software engineering, system-level development, and high-performance applications.">
+    <meta property="og:url" content="https://dariusdevworks.com/">
+    <meta property="og:type" content="website">
     <title>Darius DevWorks | Home</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="./" class="logo">
+            <img src="logo.jpg" alt="Darius DevWorks Logo" class="logo-icon">
+            Darius <span>DevWorks</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="./">Home</a></li>
+            <li><a href="projects/">Projects</a></li>
+            <li><a href="about/">About</a></li>
+            <li><a href="contact/">Contact</a></li>
+        </ul>
+
+        <div class="nav-right-actions">
+            <button class="mobile-nav-toggle" aria-label="Toggle Navigation">☰</button>
+            <button class="mode-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme Mode">🌙</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <div class="hero-brand-badge">
+                <span class="pulse-dot"></span>
+                <span>Software Engineering & Innovation</span>
+            </div>
+            <h1>Darius <span class="gradient-text">DevWorks</span></h1>
+            <div class="tagline-container">
+                <span>>&nbsp;</span>
+                <span id="typing-text">Code with Vision.</span>
+                <span class="typing-cursor"></span>
+            </div>
+            <p>Software engineering, system-level development, and high-performance tools built with precision,
+                efficiency, and clean architecture in mind.</p>
+            <div class="hero-actions">
+                <a href="projects/" class="btn">View Projects &rarr;</a>
+                <a href="contact/" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; <span class="current-year">2026</span> Darius DevWorks. Hosted with performance on <a
+                href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
 </html>
