@@ -1,20 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
-
 :root {
-    /* Brand Colors extracted from Darius DevWorks Cyber Wolf logo */
+    /* Brand Colors extracted from Darius DevWorks Tech Handshake logo */
     --brand-teal: #0284c7;
     --brand-teal-light: #38bdf8;
     --brand-teal-dark: #0369a1;
-    --brand-cyan: #00f2fe;
-    --brand-cyan-light: #67e8f9;
+    --brand-cyan: #06b6d4;
+    --brand-cyan-light: #22d3ee;
     --brand-cyan-dark: #0891b2;
-    --brand-green: #22d3ee;
-    --brand-green-light: #67e8f9;
-    --brand-green-dark: #0891b2;
-    --brand-gradient: linear-gradient(135deg, #00f2fe 0%, #0284c7 100%);
-    --brand-gradient-hover: linear-gradient(135deg, #38bdf8 0%, #00f2fe 100%);
-    --brand-glow: rgba(0, 242, 254, 0.28);
-    --brand-glow-green: rgba(34, 211, 238, 0.2);
+    --brand-green: #10b981;
+    --brand-green-light: #34d399;
+    --brand-green-dark: #059669;
+    --brand-gradient: linear-gradient(135deg, #10b981 0%, #06b6d4 50%, #0284c7 100%);
+    --brand-gradient-hover: linear-gradient(135deg, #34d399 0%, #22d3ee 50%, #38bdf8 100%);
+    --brand-glow: rgba(6, 182, 212, 0.28);
+    --brand-glow-green: rgba(16, 185, 129, 0.22);
 
     /* Dark Mode (Default) */
     --bg: #070c14;
@@ -23,7 +22,7 @@
     --card-hover: #152233;
     --accent: #38bdf8;
     --accent-teal: #0284c7;
-    --accent-green: #22d3ee;
+    --accent-green: #10b981;
     --accent-glow: rgba(56, 189, 248, 0.15);
     --accent-hover: #7dd3fc;
     --text: #cbd5e1;
@@ -33,9 +32,8 @@
     --border-highlight: #334155;
     --border-brand: rgba(56, 189, 248, 0.3);
     --code-bg: #111d2e;
-    --success: #22d3ee;
+    --success: #10b981;
     --nav-height: 72px;
-    --bg-mesh: url('bg-mesh-dark.svg');
 }
 
 [data-mode="light"] {
@@ -45,7 +43,7 @@
     --card-hover: #f8fafc;
     --accent: #0284c7;
     --accent-teal: #0369a1;
-    --accent-green: #0891b2;
+    --accent-green: #059669;
     --accent-glow: rgba(2, 132, 199, 0.1);
     --accent-hover: #0369a1;
     --text: #334155;
@@ -55,8 +53,7 @@
     --border-highlight: #cbd5e1;
     --border-brand: rgba(2, 132, 199, 0.35);
     --code-bg: #f1f5f9;
-    --success: #0891b2;
-    --bg-mesh: url('bg-mesh-light.svg');
+    --success: #059669;
 }
 
 [data-mode="light"] nav {
@@ -72,7 +69,10 @@
 
 body {
     background-color: var(--bg);
-    background-image: var(--bg-mesh);
+    background-image: 
+        radial-gradient(circle at 15% 15%, rgba(16, 185, 129, 0.08) 0%, transparent 45%),
+        radial-gradient(circle at 85% 20%, rgba(2, 132, 199, 0.09) 0%, transparent 50%),
+        radial-gradient(circle at 50% 80%, rgba(6, 182, 212, 0.05) 0%, transparent 40%);
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
@@ -255,19 +255,21 @@ nav {
     justify-content: center;
 }
 
-.hero-wolf-img {
+.hero-wolf-img,
+.hero-logo-img {
     width: 260px;
     height: 260px;
-    border-radius: 50%;
+    border-radius: 28px;
     object-fit: cover;
-    box-shadow: 0 0 35px var(--brand-glow), 0 0 60px rgba(2, 132, 199, 0.2);
-    border: 2px solid var(--accent);
+    box-shadow: 0 0 35px var(--brand-glow), 0 0 50px rgba(16, 185, 129, 0.18);
+    border: 2px solid var(--border-brand);
     transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
 }
 
-.hero-wolf-img:hover {
+.hero-wolf-img:hover,
+.hero-logo-img:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 45px rgba(0, 242, 254, 0.45), 0 0 80px rgba(2, 132, 199, 0.35);
+    box-shadow: 0 0 45px var(--brand-glow), 0 0 70px rgba(16, 185, 129, 0.28);
 }
 
 .hero-brand-badge {
@@ -1153,7 +1155,8 @@ footer a:hover {
         gap: 28px;
     }
 
-    .hero-wolf-img {
+    .hero-wolf-img,
+    .hero-logo-img {
         width: 200px;
         height: 200px;
     }
