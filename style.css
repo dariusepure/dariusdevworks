@@ -532,6 +532,33 @@ nav {
 }
 
 /* Companion Secondary Button */
+/* Google Play Badge Button */
+.btn-play-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.btn-play-badge:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+    box-shadow: 0 8px 24px rgba(2, 132, 199, 0.25);
+}
+
+.play-badge-img {
+    height: 52px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
 .btn-apk-companion {
     display: inline-flex;
     align-items: center;
@@ -1183,6 +1210,7 @@ footer a:hover {
     }
 
     .btn-apk-cta,
+    .btn-play-badge,
     .btn-apk-companion {
         width: 100%;
         box-sizing: border-box;
