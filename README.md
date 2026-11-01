@@ -53,7 +53,7 @@ This repository powers the live portfolio at [dariusdevworks.com](https://darius
 ├── index.html            # Landing / Hero page
 ├── style.css             # Unified dark/light design system & CSS variables
 ├── main.js               # Theme switcher, typing animations & mobile navigation
-├── logo.jpeg             # Brand emblem & favicon asset
+├── logo.png             # Brand emblem & favicon asset
 ├── projects/
 │   ├── index.html        # Projects showcase (Auto Analytics, Play Store & APK releases)
 │   ├── google-play-icon.png
