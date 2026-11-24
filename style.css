@@ -626,6 +626,32 @@ nav {
     color: var(--brand-green);
 }
 
+/* Video Showcase in Project Card */
+.project-video-wrapper {
+    margin-bottom: 24px;
+    max-width: 540px;
+    width: 100%;
+}
+
+.project-video-inner {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: #000;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.project-video-inner iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 /* Skills & Cards Section */
 .section-title {
     font-size: 1.45rem;
